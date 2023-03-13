@@ -27,7 +27,7 @@ $users = array_map('str_getcsv', file('users.csv'));
         </tr>
         <?php foreach($users as $user): ?>
         <tr>
-			<td><img src="uploads/<?php echo $user[2]; ?>" width="100"></td>
+	    <td><img src="uploads/<?php echo $user[2]; ?>" width="100"></td>
             <td><?php echo $user[0]; ?></td>
             <td><?php echo $user[1]; ?></td>
         </tr>

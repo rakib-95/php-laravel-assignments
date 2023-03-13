@@ -21,7 +21,7 @@ $users = array_map('str_getcsv', file('users.csv'));
     <h1>Registerd Users List</h1>
     <table>
         <tr>
-			<th>Profile Picture</th>
+	    <th>Profile Picture</th>
             <th>Name</th>
             <th>Email</th>
         </tr>

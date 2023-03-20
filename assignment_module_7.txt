@@ -1,4 +1,4 @@
-Employees Table SQL Command:
+                                                                        Employees Table SQL Command:
 
 
 //a. Write a query to select all columns and rows from the employees table.
@@ -50,17 +50,35 @@ DELETE FROM EMPLOYEES WHERE SALARY < 30000;
 
 
 
-Deparments Table SQL Command:
+                                                                      Deparments Table SQL Command:
 
 
 //a. Write a query to select all columns and rows from the departments table.
 
+SELECT * FROM DEPARTMENTS;
+
+//This will return all the columns and rows from the departments table.
+
+
 
 //b. Write a query to select only the name and manager columns of the "Finance" department.
+
+SELECT NAME, MANAGER FROM DEPARTMENTS WHERE NAME = 'FINANCE';
+
+//This command selects only the name and manager columns of the “Finance” department.
+
 
 
 //c. Write a query to calculate the total number of employees in each department.
 
+SELECT DEPARTMENTS.NAME, COUNT(*) AS TOTAL_EMPLOYEES FROM DEPARTMENTS JOIN EMPLOYEES ON DEPARTMENTS.ID = EMPLOYEES.DEPARTMENT_ID GROUP BY DEPARTMENTS.NAME;
+
+//This will calculates the total number of employees in each department by joining the departments and employees tables on the department_id column and grouping the results by department name.
+
+
 
 //d. Write a query to insert a new department called "Research" with a manager named "John Doe".
 
+INSERT INTO DEPARTMENTS (NAME, MANAGER) VALUES ('RESEARCH', 'JOHN DOE');
+
+//This command inserts a new row into the departments table with the name “Research” and the manager “John Doe”.

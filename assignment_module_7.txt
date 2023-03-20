@@ -1,0 +1,66 @@
+Employees Table SQL Command:
+
+
+//a. Write a query to select all columns and rows from the employees table.
+
+SELECT * FROM EMPLOYEES;
+
+// This will return all the columns and rows from the employees table.
+
+
+
+//b. Write a query to select only the name and salary columns of all employees with a salary greater than 50000.
+
+SELECT NAME, SALARY FROM EMPLOYEES WHERE SALARY > 50000;
+
+//This will return only the name and salary columns of employees whose salary is greater than 50000.
+
+
+
+//c. Write a query to calculate the average salary of all employees.
+
+SELECT AVG(SALARY) FROM EMPLOYEES;
+
+//This will return the average salary of all employees.
+
+
+
+//d. Write a query to count the number of employees who work in the "Marketing" department.
+
+SELECT COUNT(*) FROM EMPLOYEES WHERE DEPARTMENT_ID = (SELECT ID FROM DEPARTMENTS WHERE NAME = 'MARKETING');
+
+//This will return the number of employees who work in the "Marketing" department.
+
+
+
+//e. Write a query to update the salary column of the employee with an id of 1001 to 60000.
+
+UPDATE EMPLOYEES SET SALARY = 60000 WHERE ID = 1001;
+
+//This will update the salary column of the employee with an id of 1001 to 60000.
+
+
+
+//f. Write a query to delete all employees whose salary is less than 30000.
+
+DELETE FROM EMPLOYEES WHERE SALARY < 30000;
+
+//This will delete all employees whose salary is less than 30000.
+
+
+
+
+Deparments Table SQL Command:
+
+
+//a. Write a query to select all columns and rows from the departments table.
+
+
+//b. Write a query to select only the name and manager columns of the "Finance" department.
+
+
+//c. Write a query to calculate the total number of employees in each department.
+
+
+//d. Write a query to insert a new department called "Research" with a manager named "John Doe".
+
